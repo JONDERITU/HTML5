@@ -1,0 +1,25 @@
+/*
+ * Cytonn Technologies
+ *
+ * @author: Joseph Gichane<jgichane@cytonn.com>
+ *
+ * Project: HTML5/CSS3/SASS.
+ *
+ * */
+body {
+  font: 100% Roboto;
+  color: #333; }
+
+.nav {
+  background-color: white;
+  border-bottom: 1px solid #fff; }
+
+.nav {
+  color: black; }
+  .nav ul li {
+    display: inline-block; }
+
+h2 {
+  color: green; }
+
+/*# sourceMappingURL=main.css.map */
