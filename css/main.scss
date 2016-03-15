@@ -1,3 +1,13 @@
+
+/*
+ * Cytonn Technologies
+ *
+ * @author: Joseph Gichane<jgichane@cytonn.com>
+ *
+ * Project: HTML5/CSS3/SASS.
+ *
+ * */
+
 $font-stack:    Roboto;
 $primary_color: #333;
 $heading_color: green;
@@ -7,17 +17,22 @@ body {
   color: $primary_color;
 }
 .nav{
-background-color: #990012;
+background-color: white;
 border-bottom: 1px solid #fff;
 }
 
 .nav{
 	color: black;
-	li{
+
+	
+	ul {
+		li{
 		display: inline-block;
+		}
 	}
 }
 
-h1{
+
+h2 {
 	color: $heading_color ;
 }
