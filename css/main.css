@@ -1,5 +1,17 @@
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% Roboto;
   color: #333; }
+
+.nav {
+  background-color: #990012;
+  border-bottom: 1px solid #fff; }
+
+.nav {
+  color: black; }
+  .nav li {
+    display: inline-block; }
+
+h1 {
+  color: green; }
 
 /*# sourceMappingURL=main.css.map */
