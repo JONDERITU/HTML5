@@ -8,17 +8,31 @@
  *
  * */
 
-$font-stack:    Roboto;
+$font-stack:    Arial;
 $primary_color: #333;
 $heading_color: green;
+$myWidth: 100%;
+$myMargin: 10px;
+$myFontSizeOne: 13px;
+$myFontSizeTwo: 16px;
+$myFontSizeThree: 19px;
 
-body {
-  font: 100% $font-stack;
+@mixin padding( $top $right $bottom $left)  {
+	padding: ($top $right $bottom $left);
+}
+
+/* Using Variables  */
+p {
+ 
   color: $primary_color;
+}
+h1 {
+	color: green;
 }
 .nav{
 background-color: white;
 border-bottom: 1px solid #fff;
+text-align: left;
 }
 
 .nav{
@@ -32,7 +46,33 @@ border-bottom: 1px solid #fff;
 	}
 }
 
+/*  Nesting p, h1 , h2 inside section   */
 
+.section{
+	width: $myWidth;
+	margin: $myWidth;
+	font-family: $font_stack;
+	/* mixin defines common properties*/
+	@include padding(10px 10px 10px 15px);
+	p {
+		
+		font-size: $myFontSizeOne;
+	}
+	h1 {
+		font-size: $myFontSizeThree ;
+		color: $heading_color ;
+	}
+	h2 {
+		font-size: $myFontSizeTwo ;
+	}
+
+}
+/* Operators to define complex and dynamic code */
+p{
+	margin: $myMargin+10 ;
+}
+
+/* Lighten Operator to differentiate h1 color from h2*/
 h2 {
-	color: $heading_color ;
+	color: lighten($heading_color, 20%);
 }
