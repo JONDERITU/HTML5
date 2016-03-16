@@ -17,7 +17,7 @@ $myFontSizeOne: 13px;
 $myFontSizeTwo: 16px;
 $myFontSizeThree: 19px;
 
-@mixin padding( $top $right $bottom $left)  {
+@mixin padding( $top, $right, $bottom, $left)  {
 	padding: ($top $right $bottom $left);
 }
 
@@ -50,10 +50,10 @@ text-align: left;
 
 .section{
 	width: $myWidth;
-	margin: $myWidth;
+	margin: $myMargin;
 	font-family: $font_stack;
 	/* mixin defines common properties*/
-	@include padding(10px 10px 10px 15px);
+	@include padding(10px, 10px, 10px, 15px);
 	p {
 		
 		font-size: $myFontSizeOne;
